@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="garraf.RelatorioP"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:garraf"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="3,0,-3,0">
+        <ListBox x:ConnectionId='1' x:Name="statsProdutos" HorizontalAlignment="Left" Height="452" Margin="177,147,0,0" VerticalAlignment="Top" Width="899"/>
+        <TextBlock HorizontalAlignment="Left" Margin="276,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='2' HorizontalAlignment="Left" Margin="54,11,0,0" TextWrapping="Wrap" Text="Relatorio dos Produtos mais vendidos  " VerticalAlignment="Top"                                                 FontSize="48" Height="150" Width="566"/>
+
+    </Grid>
+
+</Page>
+

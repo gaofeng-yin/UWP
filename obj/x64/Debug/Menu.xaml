@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="garraf.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:garraf"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Left" Margin="56,25,0,0" TextWrapping="Wrap" Text="Sr.Garrafinhas" VerticalAlignment="Top" FontSize="48"/>
+        <!--<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="28,150,0,0" Width="140" FontSize="20">
+            <Run Text="Prato"/>
+            <Run Text=" principal"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="339,145,0,0" Width="140" FontSize="20">
+            <Run Text="Sopas"/>
+         </TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="595,145,0,0" Width="140" FontSize="20">
+            <Run Text="Aperitivos"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="815,145,0,0" Width="140" FontSize="20">
+            <Run Text="Sobremesa"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="1079,145,0,0" Width="140" FontSize="20">
+            <Run Text="Bebidas"/>
+          </TextBlock>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="1079,643,0,0" VerticalAlignment="Top" Height="47" Width="155"/>
+        <Button Content="Modificar" HorizontalAlignment="Left" Margin="835,643,0,0" VerticalAlignment="Top" Height="47" Width="155" Click="Button_Click_1"/>-->
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <ListView x:ConnectionId='1' x:Name="PratoPrincipal" Header="Prato Principal" Margin="1061,187,106,174"/>
+        <ListView x:ConnectionId='2' x:Name="Sopa" Header="Sopa" Margin="815,187,352,174"/>
+        <ListView x:ConnectionId='3' x:Name="Apretivo" Header="Apretivo" Margin="595,187,572,174"/>
+        <ListView x:ConnectionId='4' x:Name="Sobremesa" Header="Sobremesa" Margin="316,187,851,174"/>
+        <ListView x:ConnectionId='5' x:Name="Bebida" Header="Bebida" Margin="28,187,1139,174">
+            <!--<ListView.ItemTemplate>
+                <DataTemplate x:DataType="x:Bind">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="47"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{x:Bind}" Foreground="Teal" 
+                           FontSize="15" Grid.Column="1"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>-->
+        </ListView>
+        <!--<TextBox Name="NovoValor" HorizontalAlignment="Left" Margin="835,593,0,0" TextWrapping="Wrap" Text="Introduzir" VerticalAlignment="Top" Width="146"/>-->
+        <!--<TextBlock HorizontalAlignment="Left" Margin="835,568,0,0" TextWrapping="Wrap" Text="Introduzir novo valor para modificar" VerticalAlignment="Top"/>-->
+
+
+    </Grid>
+</Page>
+

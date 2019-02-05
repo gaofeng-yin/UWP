@@ -1,0 +1,95 @@
+﻿<Page
+    x:Class="garraf.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:garraf"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <SplitView x:ConnectionId='1' x:Name="splitView" Margin="0" DisplayMode="CompactOverlay" IsPaneOpen="True" CompactPaneLength="61">
+        <SplitView.Pane>
+            <ListView x:ConnectionId='2' x:Name="menu" HorizontalContentAlignment="Stretch" Padding="0" BorderThickness="0"                                                                                                                       >
+                <ListView.Items>
+
+                    <ListViewHeaderItem>
+                        Geral
+                    </ListViewHeaderItem>
+                    <Grid x:ConnectionId='3' x:Name="mnMenu">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="100*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="Assets/Menu.png" Width="48" Height="48" />
+                        <TextBlock Text="Menu" Grid.Column="1" VerticalAlignment="Center" />
+                    </Grid>
+                    
+                    <Grid x:ConnectionId='4' x:Name="mnPedidos" Margin="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="100*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="Assets/chair.png" Width="48" Height="48" />
+                        <TextBlock Text="Pedidos" Grid.Column="1" VerticalAlignment="Center" />
+                    </Grid>
+                    <ListViewHeaderItem>
+                        Administração
+                    </ListViewHeaderItem>
+                    <Grid x:ConnectionId='5' x:Name="mnFornecedores" Margin="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="100*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="Assets/fornecedor.png" Width="48" Height="48" />
+                        <TextBlock Text="Fornecedores" Grid.Column="1" VerticalAlignment="Center" />
+                    </Grid>
+                    <Grid x:ConnectionId='6' x:Name="mnProdutos" Margin="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="100*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="Assets/product.png" Width="48" Height="48" />
+                        <TextBlock Text="Produtos" Grid.Column="1" VerticalAlignment="Center" />
+                    </Grid>
+                    <Grid x:ConnectionId='7' x:Name="mnEncomenda" Margin="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="100*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="Assets/encomenda.png" Width="48" Height="48" />
+                        <TextBlock Text="Encomenda" Grid.Column="1" VerticalAlignment="Center" />
+                    </Grid>
+                    <Grid x:ConnectionId='8' x:Name="mnRelatorioP" Margin="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="100*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="Assets/pratodia.png" Width="48" Height="48" />
+                        <TextBlock Text="Relatorio do Produto" Grid.Column="1" VerticalAlignment="Center" />
+                    </Grid>
+                    <!-- <Grid x:Name="mnCliente" Margin="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="100*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="Assets/client.png" Width="48" Height="48" />
+                        <TextBlock Text="Cliente" Grid.Column="1" VerticalAlignment="Center" />
+                    </Grid> -->
+                </ListView.Items>
+            </ListView>
+
+        </SplitView.Pane>
+        <SplitView.Content>
+            <Frame x:ConnectionId='9' x:Name="layoutContent" >
+                <TextBlock HorizontalAlignment="Left" Margin="56,25,0,0" TextWrapping="Wrap" Text="Sr.Garrafinhas" VerticalAlignment="Top" FontSize="48"/>
+            </Frame>
+        </SplitView.Content>
+
+
+
+    </SplitView>
+
+
+</Page>
+
