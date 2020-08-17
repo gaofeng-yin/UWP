@@ -1,13 +1,5 @@
 DSAS 2017/2018
 
-Solo projeto de desenvolvimento de softwares 2 
+Restaurant management app.
 
-Gaofeng Yin a36233
-
-janeiro 2018
-
-visual studio com sqlite
-
-app sr.garrafinhas 
-
-gestão de um restaurante
+Tools: Visual studio, SQLite, mockup.
